@@ -27,8 +27,8 @@ if st.button("Analyze"):
         st.subheader("Detected Entities")
 
         for entity in results:
-            st.markdown(
-                f"**{entity['word']}** → "
+            st.write(
+                f"{entity['word']} → "
                 f"{entity['entity_group']} "
                 f"(Score: {entity['score']:.2f})"
             )
